@@ -64,6 +64,12 @@
             width: 300px;
         }
     </style>
+    <script>
+        function enviarFormulario(event) {
+            event.preventDefault();
+            alert("Inscrição feita com sucesso!");
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -98,7 +104,7 @@
 
     <section>
         <h2>Inscreva-se</h2>
-        <form>
+        <form onsubmit="enviarFormulario(event)">
             <div class="form-group">
                 <label>Nome Completo:</label>
                 <input type="text" name="nome" required>
