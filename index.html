@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Room - O Caminho do Olimpo</title>
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #000;
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #d4af37;
+            color: #000;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid #000;
+        }
+        section, form {
+            padding: 30px;
+            max-width: 900px;
+            margin: auto;
+        }
+        h1, h2, h3 {
+            font-family: 'Georgia', serif;
+        }
+        .info-box {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #d4af37;
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #2b2b2b;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .olympus-image {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .olympus-image img {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Escape Room: O Caminho do Olimpo</h1>
+        <p>Desvende os mistérios da mitologia grega</p>
+    </header>
+
+    <section>
+        <div class="olympus-image">
+            <img src="img2.jpeg" alt="Deuses Gregos">
+        </div>
+        <div class="info-box">
+            <h2>Sobre o Evento</h2>
+            <p><strong>Nome:</strong> O Caminho do Olimpo</p>
+            <p><strong>Início:</strong> 12/06/2025</p>
+            <p><strong>Término:</strong> 11/07</p>
+            <p><strong>Horário:</strong> 14:00 – 21:30</p>
+            <p><strong>Duração:</strong> 1 mês</p>
+            <ul>
+                <li><strong>Limite por sala:</strong> 30 minutos</li>
+                <li><strong>Evento completo:</strong> 2 horas</li>
+            </ul>
+            <p><strong>Local:</strong> Av. Juscelino Kubitscheck, 2606 - Ipiranga, Londrina - PR</p>
+            <p><strong>Público-Alvo:</strong> Jovens e adultos (16 a 45 anos)</p>
+        </div>
+
+        <div class="info-box">
+            <h2>Mitologia Grega</h2>
+            <p>Prepare-se para embarcar em uma aventura inspirada nas lendas da Grécia Antiga. Deuses como Zeus, Atena, Hades e Poseidon estão presentes enquanto você e seu grupo enfrentam desafios baseados nos mitos e nos 12 trabalhos de Hércules.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Inscreva-se</h2>
+        <form>
+            <div class="form-group">
+                <label>Nome Completo:</label>
+                <input type="text" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label>Telefone:</label>
+                <input type="tel" name="telefone" required>
+            </div>
+            <div class="form-group">
+                <label>Número de Participantes no Grupo:</label>
+                <input type="number" name="participantes" min="1" required>
+            </div>
+            <div class="form-group">
+                <label>Forma de Pagamento:</label>
+                <select name="pagamento">
+                    <option value="pix">PIX</option>
+                    <option value="cartao">Cartão</option>
+                    <option value="dinheiro">Dinheiro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Mensagem/Observações (opcional):</label>
+                <textarea name="mensagem" rows="4"></textarea>
+            </div>
+            <button type="submit">Enviar Inscrição</button>
+        </form>
+    </section>
+</body>
+</html>
